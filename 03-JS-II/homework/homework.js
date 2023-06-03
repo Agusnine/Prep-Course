@@ -111,7 +111,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  numero 
+  numero = % 1
 }
 
 function fizzBuzz(numero) {
@@ -119,7 +119,13 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+    if(numero % 3 === 0) return 'fizz';
+  if(numero % 5 === 0) return 'buzz';
+  if(numero % 15 === 0) return 'fizzbuzz';
+  return numero;
 }
+
+
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
